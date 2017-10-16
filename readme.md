@@ -6,6 +6,10 @@ Esse projeto tem  por objetivo avaliar o processo de desenvolvimento de um softw
 
 * PHP >= 5.5
 * MySQL Server >= 5.5.54
+ 
+## Layout
+
+O sistema utiliza o layout de painel de controle [AdminLTE](https://adminlte.io/), sua documentação pode ser encontrada [aqui](https://adminlte.io/docs/2.4/installation).
 
 ## Configuração
 
