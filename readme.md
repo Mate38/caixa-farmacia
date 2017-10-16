@@ -1,16 +1,13 @@
-# farmacia
--------------------------------
+# Sistema para caixa de farmácias
 
 Esse projeto tem  por objetivo avaliar o processo de desenvolvimento de um software através da aplicação de uma metodologia ágil, para a disciplina  de Engenharia de Software II do curso de Ciência da Computação do Instituto Federal Catarinense - Campus Videira.
 
 ## Dependências
-------------------------------
 
 * PHP >= 5.5
 * MySQL Server >= 5.5.54
 
 ## Configuração
-------------------------------
 
 Após clonar o projeto, com o terminal aberto na pasta do projeto, execute o comando:
 
@@ -46,9 +43,11 @@ Crie então uma nova chave para a aplicação com o comando:
 
 Crie então no MySQL um BD (banco de dados) chamado "farmacia" (caso deseje utilizar outro nome modifique também no DB_DATABASE).
 
+>Obs: O Laravel possui definido como codificação de caracteres padrão o formato ```utf8mb4_unicode_ci```
+
 Em seguida, no terminal aberto na pasta do projeto, execute o comando para criação das tabelas:
 
-```php artisan migrate```
+```php artisan migrate``` 
 
 Pronto! Agora, para executar o sistema, utilize o comando:
 
