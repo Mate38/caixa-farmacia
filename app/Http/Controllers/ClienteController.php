@@ -60,7 +60,6 @@ class ClienteController extends Controller
         $cliente = new cliente();
         $cliente -> nome = $request->input('nome');
         $cliente -> cpf = $request->input('cpf');
-        $cliente -> telefone = $request->input('telefone');
         $cliente -> endereco = $request->input('endereco');
         $cliente -> saldo = 0.00;
 

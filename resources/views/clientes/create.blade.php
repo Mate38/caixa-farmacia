@@ -14,10 +14,6 @@
     </br>
     {{Form::text('cpf')}}
     </br>
-    {{Form::label('telefone', 'Telefone:')}}
-    </br>
-    {{Form::text('telefone')}}
-    </br>
     {{Form::label('endereco', 'Endereço:')}}
     </br>
     {{Form::text('endereco')}}
