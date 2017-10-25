@@ -3,17 +3,17 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVendaProdutosTable extends Migration
+class CreateEstoquesTable extends Migration
 {
     /**
      * Schema table name to migrate
      * @var string
      */
-    public $set_schema_table = 'venda_produtos';
+    public $set_schema_table = 'estoques';
 
     /**
      * Run the migrations.
-     * @table venda_produtos
+     * @table estoques
      *
      * @return void
      */
@@ -21,16 +21,20 @@ class CreateVendaProdutosTable extends Migration
     {
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->increments('idvenda_produtos');
+            $table->increments('idestoques');
             $table->integer('quantidade')->nullable();
-            $table->decimal('valor_unitario', 10, 2)->nullable();
-            $table->unsignedInteger('vendas_idvendas');
+            $table->date('data_chegada')->nullable();
+            $table->date('data_vencimento')->nullable();
+            $table->date('data_fabricacao')->nullable();
+            $table->string('lote_produto', 45)->nullable();
+            $table->unsignedInteger('produtos_idprodutos');
+            $table->timestamps();
 
-            $table->index(["vendas_idvendas"], 'fk_vendaprodutos_vendas1_idx');
+            $table->index(["produtos_idprodutos"], 'fk_estoques_produtos1_idx');
 
 
-            $table->foreign('vendas_idvendas', 'fk_vendaprodutos_vendas1_idx')
-                ->references('idvendas')->on('vendas')
+            $table->foreign('produtos_idprodutos', 'fk_estoques_produtos1_idx')
+                ->references('idprodutos')->on('produtos')
                 ->onDelete('no action')
                 ->onUpdate('no action');
         });

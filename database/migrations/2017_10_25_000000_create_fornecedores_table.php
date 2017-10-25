@@ -3,17 +3,17 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVendedoresTable extends Migration
+class CreateFornecedoresTable extends Migration
 {
     /**
      * Schema table name to migrate
      * @var string
      */
-    public $set_schema_table = 'vendedores';
+    public $set_schema_table = 'fornecedores';
 
     /**
      * Run the migrations.
-     * @table vendedores
+     * @table fornecedores
      *
      * @return void
      */
@@ -21,9 +21,11 @@ class CreateVendedoresTable extends Migration
     {
         Schema::create($this->set_schema_table, function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->increments('idvendedores');
-            $table->string('nome', 45)->nullable();
-            $table->string('cpf', 45)->nullable();
+            $table->increments('idfornecedores');
+            $table->string('nome', 100)->nullable();
+            $table->string('cnpj', 45)->nullable();
+            $table->string('endereco', 250)->nullable();
+            $table->timestamps();
         });
     }
 

@@ -43,14 +43,14 @@
       <td>{{ $cliente -> cpf}}</td>
       <td>{{ $cliente -> endereco}}</td>
       <td>
-        <a href="/clientes/{{$cliente->id}}" class="btn btn-default"
+        <a href="/clientes/{{ $cliente->id }}" class="btn btn-default"
           arial-label="Mostrar Cliente">
           <span class="glyphicon glyphicon-eye-open"
           arial-hidden="true"></span>
         </a>
       </td>
       <td>
-        <a href="/clientes/{{$cliente->id}}/edit" class="btn btn-default"
+        <a href="/clientes/1/edit" class="btn btn-default"
           arial-label="Editar Cliente">
           <span class="glyphicon glyphicon-pencil"
           arial-hidden="true"></span>
