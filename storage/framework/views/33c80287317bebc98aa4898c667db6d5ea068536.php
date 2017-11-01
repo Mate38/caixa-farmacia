@@ -42,7 +42,11 @@
     </tr>
   </table>
 
-<a href="/" class="btn btn-success pull-right"
+  <a href="/clientes" class="btn btn-success pull-left"
+arial-label="Clientes">Clientes
+</a>
+
+<a href="/" class="btn btn-success pull-right" 
 arial-label="Menu Principal">Menu Principal
 </a>
 
