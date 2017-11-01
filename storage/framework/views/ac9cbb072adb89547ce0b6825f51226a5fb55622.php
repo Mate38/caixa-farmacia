@@ -1,7 +1,7 @@
 <?php $__env->startSection('title', 'Dashboard'); ?>
 
 <?php $__env->startSection('content_header'); ?>
-    <h1>Dashboard</h1>
+    <!--<h1>Dashboard</h1>-->
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('content'); ?>

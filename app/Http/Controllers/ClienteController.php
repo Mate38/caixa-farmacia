@@ -18,6 +18,30 @@ class ClienteController extends Controller
         $this->middleware('auth');
     }
 
+    public function transacao(Request $request, $idclientes){
+        $cliente = Cliente::find($idclientes);
+
+            if ($request->has('creditar')) {
+                $saldo = $cliente->saldo;
+                $saldo = $saldo + $request->input('valor');
+            }else if ($request->has('debitar')) {
+                $saldo = $cliente->saldo;
+                $saldo = $saldo - $request->input('valor');
+            }
+            $cliente->saldo = $saldo;
+            $cliente->save();
+
+            if($cliente->save()){
+                $request->session()->flash('message', 'Saldo atualizado');
+            //echo 'Cliente salvo com sucesso';
+            }else{
+                $request->session()->flash('message', 'Houve um erro ao atualizar o saldo');
+            //echo 'Houve um erro ao salvar';
+            }
+        return view('clientes/show')->with('cliente', $cliente);
+    }
+
+
     public function index(){
         $clientes = Cliente::all();
 
