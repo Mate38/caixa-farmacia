@@ -38,26 +38,26 @@
 
     @foreach($clientes as $cliente)
     <tr>
-      <td>{{ $cliente -> id}}</td>
+      <td>{{ $cliente -> idclientes}}</td>
       <td>{{ $cliente -> nome}}</td>
       <td>{{ $cliente -> cpf}}</td>
       <td>{{ $cliente -> endereco}}</td>
       <td>
-        <a href="/clientes/{{ $cliente->id }}" class="btn btn-default"
+        <a href="/clientes/{{ $cliente->idclientes }}" class="btn btn-default"
           arial-label="Mostrar Cliente">
           <span class="glyphicon glyphicon-eye-open"
           arial-hidden="true"></span>
         </a>
       </td>
       <td>
-        <a href="/clientes/1/edit" class="btn btn-default"
+        <a href="/clientes/{{ $cliente->idclientes }}/edit" class="btn btn-default"
           arial-label="Editar Cliente">
           <span class="glyphicon glyphicon-pencil"
           arial-hidden="true"></span>
         </a>
       </td>
       <td>
-      {{ Form::open( array('url' => "clientes/$cliente->id") ) }}
+      {{ Form::open( array('url' => "clientes/$cliente->idclientes") ) }}
           {{ Form::hidden('_method', 'DELETE') }}
           {{ Form::button('<span class="glyphicon glyphicon-trash"></span>', array('class' => 'btn btn-warning', 'type' => 'submit')) }}
       {{ Form::close()}}

@@ -23,13 +23,13 @@ class ClienteController extends Controller
 
         return view('clientes/index')->with('clientes', $clientes);
     }
-    public function show($id){
-        $cliente = Cliente::find($id);
+    public function show($idclientes){
+        $cliente = Cliente::find($idclientes);
         return view('clientes/show')->with('cliente', $cliente);
     }
 
-    public function edit($id){
-        $cliente = Cliente::find($id);
+    public function edit($idclientes){
+        $cliente = Cliente::find($idclientes);
 
         return view('clientes/edit')->with('cliente', $cliente);
     }
@@ -41,8 +41,8 @@ class ClienteController extends Controller
 
     }
 
-    public function destroy(Request $request, $id){
-        $cliente = Cliente::find($id);
+    public function destroy(Request $request, $idclientes){
+        $cliente = Cliente::find($idclientes);
        if($cliente->saldo == 0){
         if ($cliente -> delete()) {
                 $request -> session() -> flash('message', 'Cliente Excluído');
@@ -74,12 +74,12 @@ class ClienteController extends Controller
         return redirect()->route('clientes.index');
     }
 
-    public function update(request $request, $id){
+    public function update(request $request, $idclientes){
 
-        $cliente = Cliente::find($id);
+        $cliente = Cliente::find($idclientes);
         $cliente -> nome = $request->input('nome');
         $cliente -> cpf = $request->input('cpf');
-        $cliente -> telefone = $request->input('telefone');
+        //$cliente -> telefone = $request->input('telefone');
         $cliente -> endereco = $request->input('endereco');
         $cliente -> saldo = $request->input('saldo');
 

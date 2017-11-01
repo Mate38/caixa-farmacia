@@ -3,7 +3,7 @@
 @section('content')
   <h2>Edição de Cliente<h2>
   <hr />
-  {{ Form::model($cliente, array('route'=>array('clientes.update', $cliente->id), 'method' => 'PUT')) }}
+  {{ Form::model($cliente, array('route'=>array('clientes.update', $cliente->idclientes), 'method' => 'PUT')) }}
 <table class="table table-bordered">
   <tr>
   <th>{{Form::label('nome', 'Nome:')}}</th>
