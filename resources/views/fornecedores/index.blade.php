@@ -22,7 +22,7 @@
     <div class="box-header">
       <h3 class="box-title">Fornecedores cadastrados</h3>
     </div>
-      <!-- /.box-header -->
+
     <div class="box-body table-responsive no-padding">
       <table id="fornecedores" class="table table-bordered table-striped table-hover">
       <thead>
@@ -50,8 +50,8 @@
       </tbody>
       </table>
     </div>
-    <!-- /.box-body -->
+    
   </div>
-  <!-- /.box -->
+
 
 @stop

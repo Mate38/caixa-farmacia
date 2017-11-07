@@ -23,7 +23,7 @@
     <div class="box-header">
       <h3 class="box-title">Produtos cadastrados</h3>
     </div>
-      <!-- /.box-header -->
+    
     <div class="box-body table-responsive no-padding">
       <table id="produtos" class="table table-bordered table-striped table-hover">
       <thead>
@@ -51,11 +51,9 @@
             <td>{{$produto->Fornecedor_idFornecedor}}</td>
             <td>
               {!! Form::open(['url' => 'produtos/'.$produto->id, 'method' => 'delete', 'class'=>'form-horizontal', 'id'=>"form_buttons"]) !!}
-                <!--<a href="/produtos/{{ $produto->id }}" class="btn-sm bg-blue">Infos</a>-->
+    
                 <a href="/produtos/{{ $produto->id }}/edit" class="btn-sm bg-yellow">Editar</a>
-                <!--<a href="/produtos/{{ $produto->id }}/delete" class="btn-sm bg-red">Excluir</a>-->
-                <!--<input type="submit" name="name" class="btn-sm bg-red" value="Apagar">-->
-                <!--<button type="submit" class="btn-sm bg-red">Excluir</button>-->
+            
                 <a href="#" class="btn-sm bg-red" onClick="document.getElementById('form_buttons').submit();">Excluir</a>
               {!! Form::close() !!}
             </td>
@@ -64,8 +62,8 @@
       </tbody>
       </table>
     </div>
-    <!-- /.box-body -->
+ 
   </div>
-  <!-- /.box -->
+ 
 
 @stop

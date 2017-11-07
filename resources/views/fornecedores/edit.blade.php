@@ -17,17 +17,16 @@
 
 @section('content')
 
-  <!-- Main content -->
+
       <div class="row">
-        <!-- left column -->
+     
         <div class="col-md-10 col-md-offset-1">
-          <!-- general form elements -->
+   
           <div class="box box-success">
             <div class="box-header with-border">
               <h3 class="box-title">Edição de fornecedores</h3>
             </div>
-            <!-- /.box-header -->
-    <!-- form start -->
+          
             {!! Form::open(['url' => 'fornecedores/'.$detailpage->id, 'method' => 'PUT', 'class'=>'form-horizontal']) !!}
               <div class="box-body">
 
@@ -50,8 +49,8 @@
                 <button type="submit" class="btn btn-success pull-right">Salvar</button>
               </div>
             {!! Form::close() !!}
-            <!--</form>-->
+   
           </div>
-          <!-- /.box -->
+       
 
 @stop

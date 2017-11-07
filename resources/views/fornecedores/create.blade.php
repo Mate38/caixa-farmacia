@@ -16,17 +16,16 @@
 @stop
 
 @section('content')
-  <!-- Main content -->
+ 
       <div class="row">
-        <!-- left column -->
+     
         <div class="col-md-10 col-md-offset-1">
-          <!-- general form elements -->
+        
           <div class="box box-success">
             <div class="box-header with-border">
               <h3 class="box-title">Cadastro de fornecedores</h3>
             </div>
-            <!-- /.box-header -->
-    <!-- form start -->
+    
             {!! Form::open(array('url' => '/fornecedores', 'class'=>'form-horizontal')) !!}
               <div class="box-body">
 
@@ -56,14 +55,13 @@
 
              
 
-              <!-- /.box-body -->
 
               <div class="box-footer">
                 <button type="submit" class="btn btn-success pull-right">Salvar</button>
               </div>
             {!! Form::close() !!}
-            <!--</form>-->
+        
           </div>
-          <!-- /.box -->
+        
 
 @stop

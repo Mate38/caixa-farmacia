@@ -16,17 +16,17 @@
 @stop
 
 @section('content')
-  <!-- Main content -->
+
       <div class="row">
-        <!-- left column -->
+    
         <div class="col-md-10 col-md-offset-1">
-          <!-- general form elements -->
+         
           <div class="box box-success">
             <div class="box-header with-border">
               <h3 class="box-title">Cadastro de produtos</h3>
             </div>
-            <!-- /.box-header -->
-    <!-- form start -->
+            
+  
 
 
 
