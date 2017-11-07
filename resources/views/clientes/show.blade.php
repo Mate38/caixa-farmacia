@@ -1,3 +1,5 @@
+<!-- Autores: jeferson, Jean -->
+
 @extends('welcome')
 
 @section('content')

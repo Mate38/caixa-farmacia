@@ -1,5 +1,7 @@
 @extends('welcome')
 
+<!-- Autores: jeferson, Jean -->
+
 @section('content')
   <h2>Edição de Cliente<h2>
   <hr />

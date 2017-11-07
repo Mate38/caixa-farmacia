@@ -1,5 +1,7 @@
 <?php
 
+//Autores: Jean, Jeferson
+
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 

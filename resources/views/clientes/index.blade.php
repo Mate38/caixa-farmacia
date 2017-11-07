@@ -1,5 +1,7 @@
 @extends('welcome')
 
+<!-- Autores: jeferson, Jean -->
+
 @section('content')
 
   <div class="row fixarTopo">
