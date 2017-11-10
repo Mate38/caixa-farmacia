@@ -27,7 +27,7 @@
       </div>
   @endif
 
-<table class="table table-bordered">
+<table class="table table-striped table-bordered dataTable">
   <tr>
   <th>ID</th>
   <th>Nome</th>
@@ -69,4 +69,7 @@
     @endforeach
   </table>
 </div>
+
+
+
 @endsection

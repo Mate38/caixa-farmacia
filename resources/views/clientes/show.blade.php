@@ -8,7 +8,7 @@
 <?php 
   $valor = 0.0;
 ?>
-<table class="table table-bordered">
+<table class="table table-striped table-bordered dataTable">
   <tr>
   <th>Nome</th>
   <th>CPF</th>
@@ -23,7 +23,7 @@
     </tr>
   </table>
 
-<table class="table table-bordered">
+<table class="table table-striped table-bordered dataTable">
   <tr>
   <th>Valor Da Operação</th>
   <th>Creditar</th>
