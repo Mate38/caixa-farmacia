@@ -2,7 +2,9 @@
 
 namespace App;
 
-class Estoque
+use Illuminate\Database\Eloquent\Model;
+
+class Estoque extends Model
 {
     protected $table = "estoques";
 
